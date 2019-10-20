@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="6"><input id="result" type="text" disabled></td>
+            </tr>
+            <tr>
+                <td><input class="button" type ="button" value = "7" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "8" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "9" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "/" onclick="result.value+=this.value"/></td>
+                <td rowspan="2"><input id="C" class="button" type ="button" value = "C" onclick="result.value = ''" /></td>
+            </tr>
+            <tr>
+                <td><input class="button" type ="button" value = "4" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "5" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "6" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "x" onclick="result.value+='*'"/></td>
+            </tr>
+            <tr>
+                <td><input class="button" type ="button" value = "1" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "2" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "3" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "-" onclick="result.value+=this.value"/></td>
+                <td rowspan="2"><input id="Del" class="button" type ="button" value = "Del" onclick="result.value = result.value.substr (0,result.value.length-1)"/></td>
+            </tr>
+            <tr>
+                <td><input class="button" type ="button" value = "0" onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "." onclick="result.value+=this.value"/></td>
+                <td><input class="button" type ="button" value = "=" onclick="result.value = eval(result.value)"/></td>
+                <td><input class="button" type ="button" value = "+" onclick="result.value+=this.value"/></td>
+
+            </tr>
+        </table>
+    </body>
+</html>
